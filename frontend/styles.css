@@ -1,0 +1,106 @@
+body {
+    background: linear-gradient(120deg, #232526, #414345 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-title {
+    font-size: 3.5em;
+    font-weight: 900;
+    letter-spacing: 0.13em;
+    color: #00fff7;
+    margin: 40px 0 32px 0;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow:
+        0 0 2px #00fff7,
+        0 0 4px #4361ee;
+}
+
+.neon-btn {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 22px 80px;
+    border: none;
+    border-radius: 14px;
+    color: #fff;
+    background: linear-gradient(90deg, #00fff7 0%, #4361ee 100%);
+    box-shadow:
+        0 0 1px #00fff7,
+        0 0 3px #4361ee;
+    cursor: pointer;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    transition:
+        box-shadow 0.25s,
+        background 0.25s,
+        transform 0.18s;
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+@keyframes neon-glow {
+    from {
+        box-shadow:
+            0 0 1px #00fff7,
+            0 0 3px #4361ee;
+    }
+    to {
+        box-shadow:
+            0 0 2px #00fff7,
+            0 0 6px #4361ee;
+    }
+}
+
+.neon-btn:hover {
+    background: linear-gradient(90deg, #4361ee 0%, #00fff7 100%);
+    transform: scale(1.06);
+}
+
+.alerts-table {
+    width: 80vw;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #f8f9fa;
+    border-radius: 16px;
+    overflow: hidden;
+    font-size: 1.5em;
+    box-shadow: 0 2px 12px rgba(67,97,238,0.10);
+}
+
+.alerts-table th, .alerts-table td {
+    border: 2px solid #e0e0e0;
+    padding: 22px 18px;
+    text-align: center;
+}
+
+.alerts-table th {
+    background: #e0e7ff;
+    color: #364fbb;
+    font-weight: bold;
+    letter-spacing: 0.09em;
+    font-size: 1.18em;
+}
+
+.severity-low {
+    color: #2ecc40;
+}
+.severity-medium {
+    color: #ffb300;
+}
+.severity-high, .severity-critical {
+    color: #ff3860;
+    font-weight: bold;
+}

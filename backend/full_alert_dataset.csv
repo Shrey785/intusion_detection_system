@@ -1,0 +1,9 @@
+time,type,severity,source,packet_size,duration,flag_count,is_attack
+2025-04-22 15:00:00,DDoS,High,192.168.1.100,1500,5.0,10,1
+2025-04-22 15:01:00,SQL Injection,Medium,192.168.1.101,500,2.5,5,1
+2025-04-22 15:02:00,Port Scan,Low,192.168.1.102,300,1.0,3,1
+2025-04-22 15:03:00,Normal Traffic,Low,192.168.1.103,100,0.5,0,0
+2025-04-22 15:04:00,Brute Force,High,192.168.1.104,800,3.2,7,1
+2025-04-22 15:05:00,XSS,Medium,192.168.1.105,450,1.8,4,1
+2025-04-22 15:06:00,Data Exfiltration,Critical,192.168.1.106,2000,4.5,9,1
+2025-04-22 15:07:00,Ransomware,Critical,192.168.1.107,1700,5.0,8,1
